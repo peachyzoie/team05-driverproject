@@ -67,9 +67,8 @@ export class CdkBackendStack extends cdk.Stack {
     const lambdaDs = api.addLambdaDataSource('lambdaDatasource', postFn);
 
     // Define resolvers to map GraphQL operations to the Lambda function
-    lambdaDs.createResolver('mutationDelete',{
-      typeName: 'Mutation',
-      fieldName: 'deletePost'
+    lambdaDs.createResolver('',{
+
     });
 
     // example resource

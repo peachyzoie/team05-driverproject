@@ -1,37 +1,11 @@
-type Post {
-    id: String!
-    title: String!
-    content: String!
-}
-
-input CreatePostInput {
-    id: String
-    title: String!
-    content: String!
-}
-
-input UpdatePostInput {
-    id: String!
-    title: String
-    content: String
+type User {
+    first_name: String! """ ID? """
+    last_name: String! """ ID? """
+    email: String!
+    user_type: String!
 }
 
 type Query {
-    listPosts: [Post]
-    getPostById(postId: String!): Post
-}
-
-type Mutation {
-    createPost(post: CreatePostInput!): Post
-    deletePost(postId: String!): Post
-    updatePost(post: UpdatePostInput!): Post
-}
-
-type Subscription {
-    onCreatePost: Post
-    @aws_subscribe(mutations: ["createPost"])
-    onUpdatePost: Post
-    @aws_subscribe(mutations: ["updatePost"])
-    onDeletePost: Post
-    @aws_subscribe(mutations: ["deletePost"])
+    listUsers: [User]
+    getUserById(userId: Int!): User
 }
