@@ -71,7 +71,7 @@ export class CdkBackendStack extends cdk.Stack {
     // Define resolvers to map GraphQL operations to the Lambda function
     lambdaDs.createResolver('getUserById',{
       typeName: 'Query',
-      fieldName: 'getUser',
+      fieldName: 'getUserById',
     });
 
     //CFN output values. Purpose is to output these values in order to configure our application
