@@ -49,10 +49,12 @@ export class CdkBackendStack extends cdk.Stack {
     });
 
 
-    //Lambda function
+    //Lambda function 'HANDLER'. All lambda functions go through this "gate"
     const postFn = new lambda.Function(this, 'MyFunction', {
       runtime: lambda.Runtime.NODEJS_18_X,
-      code: new lambda.AssetCode('lamda-fns'),
+      //lambda-fns (or lambda functions folder) is the folder right above the "lib" folder.
+      // It contains all lambda functions.
+      code: new lambda.AssetCode('lambda-fns'),
       handler: 'index.handler',
       memorySize: 1024,
       environment: {
@@ -72,6 +74,16 @@ export class CdkBackendStack extends cdk.Stack {
       fieldName: 'getUser',
     });
 
+    //CFN output values. Purpose is to output these values in order to configure our application
+    new cdk.CfnOutput(this, 'AppSyncAPIURL', {
+      value: api.graphqlUrl
+    });
+    new cdk.CfnOutput(this, 'AppSyncAPIKey', {
+      value: api.apiKey || ''
+    });
+    new cdk.CfnOutput(this, 'ProjectRegion', {
+      value: this.region
+    });
 
     // example resource
     /*
