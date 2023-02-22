@@ -8,7 +8,7 @@ async function createUser(user: User) {
     //Content field for our user
     const {id, first_name, last_name, email, user_type} = user;
     try {
-        //MySQL query, like a prepared statement, with DDL inserting a new user to the db
+        //MySQL query, like a prepared statement, with DML inserting a new user to the db
         const query = `INSERT INTO User (id, first_name, last_name, email, user_type) 
                                                     VALUES (:id, :first_name, :last_name, :email, :user_type)`;
         //execute query with parameters

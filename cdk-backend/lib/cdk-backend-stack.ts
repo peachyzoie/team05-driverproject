@@ -73,6 +73,14 @@ export class CdkBackendStack extends cdk.Stack {
       typeName: 'Query',
       fieldName: 'getUserById',
     });
+    lambdaDs.createResolver('createUser', {
+      typeName: 'Mutation',
+      fieldName: 'createUser'
+    });
+    lambdaDs.createResolver('deleteUser', {
+      typeName: 'Mutation',
+      fieldName: 'deleteUser'
+    })
 
     //CFN output values. Purpose is to output these values in order to configure our application
     new cdk.CfnOutput(this, 'AppSyncAPIURL', {
