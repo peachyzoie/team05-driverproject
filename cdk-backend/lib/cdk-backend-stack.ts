@@ -67,10 +67,11 @@ export class CdkBackendStack extends cdk.Stack {
     const lambdaDs = api.addLambdaDataSource('lambdaDatasource', postFn);
 
     // Define resolvers to map GraphQL operations to the Lambda function
-    /*lambdaDs.createResolver('',{
-
+    lambdaDs.createResolver('getUserById',{
+      typeName: 'Query',
+      fieldName: 'user',
     });
-    */
+
 
     // example resource
     /*

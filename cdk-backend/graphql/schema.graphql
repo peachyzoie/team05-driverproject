@@ -1,4 +1,5 @@
 type User {
+    id: ID!
     first_name: String! """ ID? """
     last_name: String! """ ID? """
     email: String!
@@ -6,6 +7,5 @@ type User {
 }
 
 type Query {
-    listUsers: [User]
-    getUserById(userId: Int!): User
+    getUser(id: ID!): User
 }
