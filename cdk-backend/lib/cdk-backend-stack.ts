@@ -10,7 +10,7 @@ export class CdkBackendStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-    const api = new appsync.GraphqlApi(this, 'Api', {
+    const api = new appsync.GraphqlApi(this, 'Team05-appsync-api', {
       name: 'Team05-appsync-api',
       schema: appsync.SchemaFile.fromAsset('graphql/schema.graphql'),
       authorizationConfig: {
@@ -49,7 +49,7 @@ export class CdkBackendStack extends cdk.Stack {
 
 
     //Lambda function 'HANDLER'. All lambda functions go through this "gate"
-    const postFn = new lambda.Function(this, 'MyFunction', {
+    const postFn = new lambda.Function(this, 'Team05_lambda_handler', {
       runtime: lambda.Runtime.NODEJS_18_X,
       functionName: 'Team05_lambda_handler',
       //lambda-fns (or lambda functions folder) is the folder right above the "lib" folder.
@@ -66,7 +66,7 @@ export class CdkBackendStack extends cdk.Stack {
     });
     //Granting iam access to the cluster from the lambda function
     cluster.grantDataApiAccess(postFn);
-    const lambdaDs = api.addLambdaDataSource('lambdaDatasource', postFn);
+    const lambdaDs = api.addLambdaDataSource('Team05_lambdaDatasource', postFn);
 
     // Define resolvers to map GraphQL operations to the Lambda function
     lambdaDs.createResolver('getUserById',{
