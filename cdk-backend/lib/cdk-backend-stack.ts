@@ -23,8 +23,8 @@ export class CdkBackendStack extends cdk.Stack {
       },
     });
     //creating a virtual private cloud for the Aurora database
-    const vpc = new ec2.Vpc(this, 'Team05-vpc', {
-      vpcName: 'Team05-vpc',
+    const vpc = new ec2.Vpc(this, 'Team05-VPC-1', {
+      vpcName: 'Team05-VPC-1',
     });
 
 
@@ -37,7 +37,7 @@ export class CdkBackendStack extends cdk.Stack {
       parameterGroup: rds.ParameterGroup.fromParameterGroupName(this, 'Team05-parametergroup',
                                               'Team05-parametergroup'),
       //Database name
-      defaultDatabaseName: 'Team05-aurora',
+      defaultDatabaseName: 'Team05_aurora',
       vpc,
       //credentials for admin user -----
       //credentials: {username: 'team5user'},
@@ -51,6 +51,7 @@ export class CdkBackendStack extends cdk.Stack {
     //Lambda function 'HANDLER'. All lambda functions go through this "gate"
     const postFn = new lambda.Function(this, 'MyFunction', {
       runtime: lambda.Runtime.NODEJS_18_X,
+      functionName: 'Team05_lambda_handler',
       //lambda-fns (or lambda functions folder) is the folder right above the "lib" folder.
       // It contains all lambda functions.
       code: new lambda.AssetCode('lambda-fns'),
@@ -59,7 +60,7 @@ export class CdkBackendStack extends cdk.Stack {
       environment: {
         CLUSTER_ARN: cluster.clusterArn,
         SECRET_ARN: cluster.secret?.secretArn || '',
-        DB_NAME: 'Team05-aurora',
+        DB_NAME: 'Team05_aurora',
         AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
       },
     });
