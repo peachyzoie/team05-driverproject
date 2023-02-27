@@ -34,8 +34,8 @@ export class CdkBackendStack extends cdk.Stack {
       engine: rds.DatabaseClusterEngine.AURORA_MYSQL,
       //Additional parameters to pass to the database engine
       //
-      parameterGroup: rds.ParameterGroup.fromParameterGroupName(this, 'Team05-parametergroup',
-                                              'Team05-parametergroup'),
+      //parameterGroup: rds.ParameterGroup.fromParameterGroupName(this, 'Team05-parametergroup',
+      //    'default.aurora-mysql'),
       //Database name
       defaultDatabaseName: 'Team05_aurora',
       vpc,
