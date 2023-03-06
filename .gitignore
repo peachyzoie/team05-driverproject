@@ -1,6 +1,7 @@
 .DS_Store
 
 #amplify-do-not-edit-begin
+.next
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/logs
