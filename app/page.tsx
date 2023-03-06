@@ -11,13 +11,20 @@ import React from "react";
 import {GetServerSideProps} from "next";
 import {GRAPHQL_AUTH_MODE} from "@aws-amplify/auth";
 import getUserById from "@/cdk-backend/lambda-fns/getUserById";
+import Link from "next/link";
 //Amplify.configure({awsExports,ssr:true});
 
 export default function Home() {
 
 
     return (
-        <h1>HOME</h1>
+        <div>
+
+            <Link href={"../src"}>
+                <h1>HOME</h1>
+            </Link>
+        </div>
+
     );
 }
 
