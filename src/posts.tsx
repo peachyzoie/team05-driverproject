@@ -1,21 +1,11 @@
+import {useEffect, useState} from "react";
+import styles from './page.module.css'
+import {API} from 'aws-amplify'
 
-import React from "react";
-import {GetServerSideProps} from "next";
-import {GRAPHQL_AUTH_MODE} from "@aws-amplify/auth";
-import getUserById from "@/cdk-backend/lambda-fns/getUserById";
-import Link from "next/link";
-
-
-export default function Home() {
+export default function posts() {
 
 
     return (
-        <div>
-
-            <Link href={"../src"}>
-                <h1>HOME</h1>
-            </Link>
-        </div>
-
+        <h1>HI I am posts</h1>
     );
 }
