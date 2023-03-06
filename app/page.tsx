@@ -1,18 +1,9 @@
+import {Amplify} from "aws-amplify";
+import awsmobile from "../src/aws-exports";
 
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-import {Amplify, Auth, withSSRContext} from 'aws-amplify';
-import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-
-//import awsExports from '../src/aws-exports';
 import React from "react";
-import {GetServerSideProps} from "next";
-import {GRAPHQL_AUTH_MODE} from "@aws-amplify/auth";
-import getUserById from "@/cdk-backend/lambda-fns/getUserById";
 import Link from "next/link";
-//Amplify.configure({awsExports,ssr:true});
 
 export default function Home() {
 
