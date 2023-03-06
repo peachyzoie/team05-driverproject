@@ -21,7 +21,7 @@ export default function Home() {
         <div>
 
             <Link href={"../src"}>
-                <h1>HOME</h1>
+                <h1>Login to the Driver Incentive Program</h1>
             </Link>
         </div>
 
