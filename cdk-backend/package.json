@@ -20,10 +20,10 @@
     "typescript": "~4.9.5"
   },
   "dependencies": {
-    "@aws-cdk/aws-appsync": "^1.193.0",
-    "@aws-cdk/aws-ec2": "^1.193.0",
-    "@aws-cdk/aws-lambda": "^1.193.0",
-    "@aws-cdk/aws-rds": "^1.193.0",
+    "@aws-cdk/aws-appsync": "^1.195.0",
+    "@aws-cdk/aws-ec2": "^1.195.0",
+    "@aws-cdk/aws-lambda": "^1.195.0",
+    "@aws-cdk/aws-rds": "^1.195.0",
     "aws-cdk-lib": "2.65.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21"
