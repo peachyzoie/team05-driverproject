@@ -1,11 +1,29 @@
-import {Amplify} from "aws-amplify";
-import awsmobile from "../src/aws-exports";
-
+//"use client";
+import { Amplify } from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-import React from "react";
+
+import awsExports from '../src/aws-exports';
+import React from 'react';
 import Link from "next/link";
+Amplify.configure(awsExports);
 
 export default function Home() {
+    return (
+        //Link for Login to... directs to some path specified from href, so basically no where for now
+        <div>
+            <Link href={"../src"}>
+                <h1>Login to the Driver Incentive Program</h1>
+            </Link>
+        </div>
+
+    );
+}
+
+
+//With logins
+/*
+function Home() {
 
 
     return (
@@ -18,7 +36,8 @@ export default function Home() {
 
     );
 }
-
+export default withAuthenticator(Home);
+*/
 /*
 const inter = Inter({ subsets: ['latin'] })
 
