@@ -1,22 +1,15 @@
 type User
-    @model
-    @auth(
-        rules: [
-            { allow: owner } # Allow the creator of a todo to perform Create, Update, Delete operations.
-            { allow: public, operations: [read] } # Allow public (guest users without an account) to Read todos.
-            { allow: private, operations: [read] } # Allow private (other signed in users) to Read todos.
-        ]
-    ) {
+{
     id: ID!
-    first_name: String! """ ID? """
-    last_name: String! """ ID? """
+    first_name: String!
+    last_name: String!
     email: String!
     user_type: String!
 }
 input CreateUserInput {
     id: ID!
-    first_name: String! """ ID? """
-    last_name: String! """ ID? """
+    first_name: String!
+    last_name: String!
     email: String!
     user_type: String!
 }
