@@ -1,0 +1,2 @@
+export declare const createUser = "\n  mutation CreateUser($user: CreateUserInput!) {\n    createUser(user: $user) {\n      id\n      first_name\n      last_name\n      email\n      user_type\n    }\n  }\n";
+export declare const deleteUser = "\n  mutation DeleteUser($userId: ID!) {\n    deleteUser(userId: $userId) {\n      id\n      first_name\n      last_name\n      email\n      user_type\n    }\n  }\n";
