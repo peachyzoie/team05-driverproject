@@ -2,6 +2,7 @@ import getUserById from './getUserById';
 import createUser from './createUser';
 import deleteUser from "./deleteUser";
 import User from './User';
+
 type AppSyncEvent = {
     info: {
         fieldName: string
