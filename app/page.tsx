@@ -35,6 +35,7 @@ function Home() {
 
     );
 }
+
 export default withAuthenticator(Home);
 
 /*

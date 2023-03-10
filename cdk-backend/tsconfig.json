@@ -2,6 +2,9 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "commonjs",
+    "compilerOptions": {
+      "types": ["node", "aws-cdk-lib"]
+    },
     "lib": [
       "es2020"
     ],
