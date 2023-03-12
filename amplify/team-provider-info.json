@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "team5amplifye3f908d6": {}
+        "team5amplifye3f908d6": {},
+        "userPoolGroups": {}
       }
     }
   }

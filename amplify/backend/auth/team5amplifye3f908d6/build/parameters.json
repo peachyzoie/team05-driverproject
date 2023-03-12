@@ -35,7 +35,11 @@
   "resourceName": "team5amplifye3f908d6",
   "authSelections": "identityPoolAndUserPool",
   "useDefault": "default",
-  "userPoolGroupList": [],
+  "userPoolGroupList": [
+    "Administrator",
+    "Sponsor",
+    "Driver"
+  ],
   "serviceName": "Cognito",
   "usernameCaseSensitive": false,
   "useEnabledMfas": true,
