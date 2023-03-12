@@ -8,6 +8,11 @@ export type AmplifyDependentResourcesAttributes = {
       "UserPoolArn": "string",
       "UserPoolId": "string",
       "UserPoolName": "string"
+    },
+    "userPoolGroups": {
+      "AdministratorGroupRole": "string",
+      "DriverGroupRole": "string",
+      "SponsorGroupRole": "string"
     }
   }
 }
