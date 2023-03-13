@@ -5,10 +5,12 @@
     "cdk-backend": "bin/cdk-backend.js"
   },
   "scripts": {
-    "build": "tsc",
+    "dev": "next dev",
+    "build": "next build",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "start": "next start -- --port $PORT"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
