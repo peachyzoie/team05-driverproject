@@ -1,5 +1,5 @@
 {
-  "Description": "Root Stack for AWS Amplify CLI",
+  "Description": "Root Stack for AWS Amplify Console",
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
     "DeploymentBucketName": {
@@ -183,7 +183,7 @@
           "resourceName": "team5amplifye3f908d6",
           "authSelections": "identityPoolAndUserPool",
           "useDefault": "default",
-          "userPoolGroupList": "",
+          "userPoolGroupList": "Administrator,Sponsor,Driver",
           "serviceName": "Cognito",
           "usernameCaseSensitive": false,
           "useEnabledMfas": true,
@@ -201,6 +201,51 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
+          "env": "dev"
+        }
+      }
+    },
+    "authuserPoolGroups": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-team5amplify-dev-141419-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
+        "Parameters": {
+          "AuthRoleArn": {
+            "Fn::GetAtt": [
+              "AuthRole",
+              "Arn"
+            ]
+          },
+          "UnauthRoleArn": {
+            "Fn::GetAtt": [
+              "UnauthRole",
+              "Arn"
+            ]
+          },
+          "authteam5amplifye3f908d6UserPoolId": {
+            "Fn::GetAtt": [
+              "authteam5amplifye3f908d6",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "authteam5amplifye3f908d6AppClientIDWeb": {
+            "Fn::GetAtt": [
+              "authteam5amplifye3f908d6",
+              "Outputs.AppClientIDWeb"
+            ]
+          },
+          "authteam5amplifye3f908d6AppClientID": {
+            "Fn::GetAtt": [
+              "authteam5amplifye3f908d6",
+              "Outputs.AppClientID"
+            ]
+          },
+          "authteam5amplifye3f908d6IdentityPoolId": {
+            "Fn::GetAtt": [
+              "authteam5amplifye3f908d6",
+              "Outputs.IdentityPoolId"
+            ]
+          },
           "env": "dev"
         }
       }

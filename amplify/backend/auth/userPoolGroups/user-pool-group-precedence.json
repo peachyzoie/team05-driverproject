@@ -1,0 +1,14 @@
+[
+  {
+    "groupName": "Administrator",
+    "precedence": 1
+  },
+  {
+    "groupName": "Sponsor",
+    "precedence": 2
+  },
+  {
+    "groupName": "Driver",
+    "precedence": 3
+  }
+]
