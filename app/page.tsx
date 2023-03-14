@@ -6,7 +6,7 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
-import { BrowserRouter } from 'react-router-dom';
+//import { BrowserRouter } from 'react-router-dom';
 Amplify.configure(awsExports);
 
 /*
