@@ -9,6 +9,7 @@ import Link from "next/link";
 import { BrowserRouter } from 'react-router-dom';
 Amplify.configure(awsExports);
 
+/*
 export default function Home() {
     return (
         //Link for Login to... directs to some path specified from href, so basically no where for now
@@ -20,13 +21,11 @@ export default function Home() {
 
     );
 }
-
+*/
 
 //With logins
-/*
+
 function Home() {
-
-
     return (
         <div>
 
@@ -37,8 +36,9 @@ function Home() {
 
     );
 }
+
 export default withAuthenticator(Home);
-*/
+
 /*
 const inter = Inter({ subsets: ['latin'] })
 
