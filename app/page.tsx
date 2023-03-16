@@ -33,11 +33,6 @@ function Home() {
                 <h1>Login to the Driver Incentive Program</h1>
             </Link>
         </div>
-        <div>
-            <li><Link href = "/src/pages/profile">
-                Profile Page
-            </Link></li>
-            </div>
     );
 }
 
