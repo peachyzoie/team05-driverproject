@@ -666,7 +666,27 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
 
 
+//import { useRouter } from 'next/router';
 lib.Amplify.configure(aws_exports);
+//With logins
+function Home() {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                href: "../src",
+                children: /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                    children: "Login to the Driver Incentive Program"
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                    href: "/src/pages/sponsor_dashboard",
+                    children: "Dashboard"
+                })
+            })
+        ]
+    });
+}
 /*
 export default function Home() {
     return (
@@ -679,26 +699,7 @@ export default function Home() {
 
     );
 }
-*/ //With logins
-function Home() {
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                href: "../src",
-                children: /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                    children: "Login to the Driver Incentive Program"
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                    href: "/src/pages/profile",
-                    children: "Profile Page"
-                })
-            })
-        ]
-    });
-}
-/* harmony default export */ const page = ((0,withAuthenticator/* withAuthenticator */.Q)(Home));
+*/ /* harmony default export */ const page = ((0,withAuthenticator/* withAuthenticator */.Q)(Home));
 
 
 /***/ }),

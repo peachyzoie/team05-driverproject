@@ -1,5 +1,6 @@
-import Link from 'next/link'
-import {withAuthenticator} from "@aws-amplify/ui-react";
+import Link from 'next/link';
+import React from 'react';
+import {Outlet} from "react-router-dom";
 
 function dashboard(){
     return(
@@ -9,6 +10,6 @@ function dashboard(){
             </Link>
         </div>
     );
-};
+}
 
-export default withAuthenticator(dashboard);
+export default dashboard;
