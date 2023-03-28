@@ -6,8 +6,24 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
-//import { BrowserRouter } from 'react-router-dom';
+//import { useRouter } from 'next/router';
 Amplify.configure(awsExports);
+
+//With logins
+function Home() {
+    return (
+        <div>
+
+            <Link href={"../src"}>
+                <h1>Login to the Driver Incentive Program</h1>
+            </Link>
+            <li><Link href = "/src/pages/sponsor_dashboard">
+                Dashboard
+            </Link></li>
+        </div>
+
+    );
+}
 
 /*
 export default function Home() {
@@ -23,6 +39,7 @@ export default function Home() {
 }
 */
 
+<<<<<<< HEAD
 //With logins
 
 function Home() {
@@ -127,3 +144,6 @@ export default function Home() {
   )
 }
 */
+=======
+export default withAuthenticator(Home);
+>>>>>>> zoie
