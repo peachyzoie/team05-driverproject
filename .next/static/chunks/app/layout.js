@@ -8,20 +8,20 @@
  */
 (self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["app/layout"],{
 
-/***/ "(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpeachyzoie%2FDocuments%2FGitHub%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false!":
+/***/ "(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fabrahamnaula%2FWebstormProjects%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false!":
 /*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpeachyzoie%2FDocuments%2FGitHub%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false! ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fabrahamnaula%2FWebstormProjects%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false! ***!
   \*****************************************************************************************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval(__webpack_require__.ts("(() => __webpack_require__.e(/*! import() */ \"_app-client_app_globals_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./app/globals.css */ \"(app-client)/./app/globals.css\")))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1jbGllbnQpLy4vbm9kZV9tb2R1bGVzL25leHQvZGlzdC9idWlsZC93ZWJwYWNrL2xvYWRlcnMvbmV4dC1mbGlnaHQtY2xpZW50LWVudHJ5LWxvYWRlci5qcz9tb2R1bGVzPSUyRlVzZXJzJTJGcGVhY2h5em9pZSUyRkRvY3VtZW50cyUyRkdpdEh1YiUyRnRlYW0wNS1kcml2ZXJwcm9qZWN0JTJGYXBwJTJGZ2xvYmFscy5jc3Mmc2VydmVyPWZhbHNlIS5qcyIsIm1hcHBpbmdzIjoiQUFBQSxPQUFPLG1MQUEyRyIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvPzFiOTgiXSwic291cmNlc0NvbnRlbnQiOlsiKCgpID0+IGltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJsYXp5XCIgKi8gXCIvVXNlcnMvcGVhY2h5em9pZS9Eb2N1bWVudHMvR2l0SHViL3RlYW0wNS1kcml2ZXJwcm9qZWN0L2FwcC9nbG9iYWxzLmNzc1wiKSkiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpeachyzoie%2FDocuments%2FGitHub%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false!\n"));
+eval(__webpack_require__.ts("(() => __webpack_require__.e(/*! import() */ \"_app-client_app_globals_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./app/globals.css */ \"(app-client)/./app/globals.css\")))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1jbGllbnQpLy4vbm9kZV9tb2R1bGVzL25leHQvZGlzdC9idWlsZC93ZWJwYWNrL2xvYWRlcnMvbmV4dC1mbGlnaHQtY2xpZW50LWVudHJ5LWxvYWRlci5qcz9tb2R1bGVzPSUyRlVzZXJzJTJGYWJyYWhhbW5hdWxhJTJGV2Vic3Rvcm1Qcm9qZWN0cyUyRnRlYW0wNS1kcml2ZXJwcm9qZWN0JTJGYXBwJTJGZ2xvYmFscy5jc3Mmc2VydmVyPWZhbHNlIS5qcyIsIm1hcHBpbmdzIjoiQUFBQSxPQUFPLG1MQUE2RyIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvPzg2N2UiXSwic291cmNlc0NvbnRlbnQiOlsiKCgpID0+IGltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJsYXp5XCIgKi8gXCIvVXNlcnMvYWJyYWhhbW5hdWxhL1dlYnN0b3JtUHJvamVjdHMvdGVhbTA1LWRyaXZlcnByb2plY3QvYXBwL2dsb2JhbHMuY3NzXCIpKSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fabrahamnaula%2FWebstormProjects%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false!\n"));
 
 /***/ })
 
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["main-app"], function() { return __webpack_exec__("(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpeachyzoie%2FDocuments%2FGitHub%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false!"); });
+/******/ __webpack_require__.O(0, ["main-app"], function() { return __webpack_exec__("(app-client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fabrahamnaula%2FWebstormProjects%2Fteam05-driverproject%2Fapp%2Fglobals.css&server=false!"); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ _N_E = __webpack_exports__;
 /******/ }
