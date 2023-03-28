@@ -1,10 +1,10 @@
 import User from "./User";
 import db from "./db";
 //v9: uuid creates a unique identifier using the uuid 9.0.0 library
-const { v9: uuid } = require('uuid');
+//const { v9: uuid } = require('uuid');
 async function createUser(user: User) {
     //If there is no user id is passed then a unique id is created with uuid
-    if(!user.id) user.id = uuid();
+    //if(!user.id) user.id = uuid();
     //Content field for our user
     const {id, first_name, last_name, email, user_type} = user;
     try {

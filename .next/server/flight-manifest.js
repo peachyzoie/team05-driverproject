@@ -133,14 +133,14 @@ self.__RSC_MANIFEST={
   },
   "__edge_ssr_module_mapping__": {},
   "__entry_css_files__": {
-    "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/page": [
+    "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/page": [
       "static/css/app/page.css"
     ],
-    "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/layout": [
+    "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/layout": [
       "static/css/_app-client_app_globals_css.css"
     ]
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/@aws-amplify/ui-react/dist/styles.css": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/@aws-amplify/ui-react/dist/styles.css": {
     "default": {
       "id": "null",
       "name": "default",
@@ -149,7 +149,7 @@ self.__RSC_MANIFEST={
       ]
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/page.tsx": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/page.tsx": {
     "": {
       "id": "(app-client)/./app/page.tsx",
       "name": "",
@@ -175,7 +175,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/app-router.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/app-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
@@ -201,7 +201,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/app-router.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/app-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
@@ -227,7 +227,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/error-boundary.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/error-boundary.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
@@ -253,7 +253,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/error-boundary.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/error-boundary.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
@@ -279,7 +279,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/layout-router.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/layout-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
@@ -305,7 +305,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/layout-router.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/layout-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
@@ -331,7 +331,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/render-from-template-context.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/render-from-template-context.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
@@ -357,7 +357,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
@@ -383,7 +383,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/globals.css": {
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/globals.css": {
     "default": {
       "id": "null",
       "name": "default",
