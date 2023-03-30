@@ -1,10 +1,1 @@
-{
-  "../../node_modules/react-map-gl/dist/esm/components/map.js -> mapbox-gl": {
-<<<<<<< HEAD
-    "id": "../../node_modules/react-map-gl/dist/esm/components/map.js -> mapbox-gl",
-=======
-    "id": null,
->>>>>>> zoie
-    "files": []
-  }
-}
+{}

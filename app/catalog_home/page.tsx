@@ -5,4 +5,4 @@ function Catalog() {
         <h2>This is the catalog home page</h2>
     )
 }
-export default Cataloga
+export default Catalog

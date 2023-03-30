@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 self.__RSC_MANIFEST={
   "__ssr_module_mapping__": {
     "(app-client)/./app/page.tsx": {
@@ -23,6 +22,32 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
         ],
         "async": false
       }
@@ -134,14 +159,14 @@ self.__RSC_MANIFEST={
   },
   "__edge_ssr_module_mapping__": {},
   "__entry_css_files__": {
-    "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/page": [
+    "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/page": [
       "static/css/app/page.css"
     ],
-    "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/layout": [
-      "static/css/_app-client_app_globals_css.css"
+    "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/layout": [
+      "static/css/_app-client_app_page_module_css.css"
     ]
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/@aws-amplify/ui-react/dist/styles.css": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/@aws-amplify/ui-react/dist/styles.css": {
     "default": {
       "id": "null",
       "name": "default",
@@ -150,7 +175,7 @@ self.__RSC_MANIFEST={
       ]
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/page.tsx": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/page.tsx": {
     "": {
       "id": "(app-client)/./app/page.tsx",
       "name": "",
@@ -176,7 +201,59 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/app-router.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/link.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/link.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/app-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
@@ -202,7 +279,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/app-router.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/app-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
@@ -228,7 +305,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/error-boundary.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/error-boundary.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
@@ -254,7 +331,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/error-boundary.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/error-boundary.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
@@ -280,7 +357,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/layout-router.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/layout-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
@@ -306,7 +383,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/layout-router.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/layout-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
@@ -332,7 +409,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/client/components/render-from-template-context.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/render-from-template-context.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
@@ -358,7 +435,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
@@ -384,16 +461,13 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/globals.css": {
+  "/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/page.module.css": {
     "default": {
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/_app-client_app_globals_css.css"
+        "static/css/_app-client_app_page_module_css.css"
       ]
     }
   }
 }
-=======
-self.__RSC_MANIFEST={"__ssr_module_mapping__":{"2092":{"":{"id":"56862","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"56862","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"56862","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"7043":{"":{"id":"82030","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"82030","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"82030","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"7681":{"":{"id":"14142","name":"","chunks":["18:20c944a7-0ba9f132e5c3dd30","631:0eceb729-a499211501d7f634","664:664-7cbd7d03c73bbebc","55:55-f59cc8c4684f5b66","931:app/page-1ba82775b3b31142"],"async":false},"*":{"id":"14142","name":"*","chunks":["18:20c944a7-0ba9f132e5c3dd30","631:0eceb729-a499211501d7f634","664:664-7cbd7d03c73bbebc","55:55-f59cc8c4684f5b66","931:app/page-1ba82775b3b31142"],"async":false},"default":{"id":"14142","name":"default","chunks":["18:20c944a7-0ba9f132e5c3dd30","631:0eceb729-a499211501d7f634","664:664-7cbd7d03c73bbebc","55:55-f59cc8c4684f5b66","931:app/page-1ba82775b3b31142"],"async":false}},"7954":{"":{"id":"89446","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"89446","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"89446","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"9875":{"":{"id":"43258","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"43258","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"43258","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}}},"__edge_ssr_module_mapping__":{},"__entry_css_files__":{"/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/page":["static/css/88b3bddb97735692.css"],"/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/layout":["static/css/876d048b5dab7c28.css"]},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/app-router.js":{"":{"id":"7954","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"7954","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"7954","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/app-router.js":{"":{"id":"7954","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"7954","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"7954","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/error-boundary.js":{"":{"id":"7043","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"7043","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"7043","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/error-boundary.js":{"":{"id":"7043","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"7043","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"7043","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/layout-router.js":{"":{"id":"9875","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"9875","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"9875","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/layout-router.js":{"":{"id":"9875","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"9875","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"9875","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/client/components/render-from-template-context.js":{"":{"id":"2092","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"2092","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"2092","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/next/dist/esm/client/components/render-from-template-context.js":{"":{"id":"2092","name":"","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"*":{"id":"2092","name":"*","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false},"default":{"id":"2092","name":"default","chunks":["272:webpack-a6b94870f0546d1c","17:17-2c8957bfa085de8b","744:main-app-7a6476113f3f8d1c"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/node_modules/@aws-amplify/ui-react/dist/styles.css":{"default":{"id":"null","name":"default","chunks":["static/css/88b3bddb97735692.css"]}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/page.tsx":{"":{"id":"7681","name":"","chunks":["18:20c944a7-0ba9f132e5c3dd30","631:0eceb729-a499211501d7f634","664:664-7cbd7d03c73bbebc","55:55-f59cc8c4684f5b66","931:app/page-1ba82775b3b31142"],"async":false},"*":{"id":"7681","name":"*","chunks":["18:20c944a7-0ba9f132e5c3dd30","631:0eceb729-a499211501d7f634","664:664-7cbd7d03c73bbebc","55:55-f59cc8c4684f5b66","931:app/page-1ba82775b3b31142"],"async":false},"default":{"id":"7681","name":"default","chunks":["18:20c944a7-0ba9f132e5c3dd30","631:0eceb729-a499211501d7f634","664:664-7cbd7d03c73bbebc","55:55-f59cc8c4684f5b66","931:app/page-1ba82775b3b31142"],"async":false}},"/Users/peachyzoie/Documents/GitHub/team05-driverproject/app/globals.css":{"default":{"id":"9617","name":"default","chunks":["static/css/876d048b5dab7c28.css"]}}}
->>>>>>> zoie
