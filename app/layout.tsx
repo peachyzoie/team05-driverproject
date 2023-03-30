@@ -4,7 +4,8 @@ import styles from "./page.module.css";
 import Link from "next/link"
 //import { useSelectedLayoutSegment} from "next/navigation";
 
-export default function RootLayout ({children: any}) {
+// @ts-ignore
+export default function RootLayout ({children}) {
     //children: React.ReactNode
 
   return (
@@ -22,7 +23,7 @@ export default function RootLayout ({children: any}) {
           <Link href = "/catalog_home">Catalog</Link>
       </div>
       <div className = {`${styles.content}`}>
-          {children: any}
+          {children}
     </div>
       </body>
     </html>
