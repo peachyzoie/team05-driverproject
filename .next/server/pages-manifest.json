@@ -1,5 +1,7 @@
 {
   "/_app": "pages/_app.js",
+  "/sponsor_dashboard": "pages/sponsor_dashboard.js",
+  "/sponsor_dashboard_pages/drivers": "pages/sponsor_dashboard_pages/drivers.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js"
 }
