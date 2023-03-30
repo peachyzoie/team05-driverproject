@@ -115,14 +115,6 @@
 /******/ 		};
 /******/ 	})();
 /******/ 	
-<<<<<<< HEAD
-/******/ 	/* webpack/runtime/getFullHash */
-/******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("9dccdaae389670e7")
-/******/ 	})();
-/******/ 	
-=======
->>>>>>> zoie
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
