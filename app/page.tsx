@@ -22,7 +22,7 @@ function Home() {
                     <h1>Click Here to View Your Profile</h1>
             </Link>
 
-            <Link href={"/catalog"}>
+            <Link href={"/catalog_home"}>
                 <h1>Click Here to View the Catalog</h1>
             </Link>
         </div>
