@@ -5,36 +5,36 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/08u52k4e_8xXrENu-VxO_/_buildManifest.js",
-    "static/08u52k4e_8xXrENu-VxO_/_ssgManifest.js"
+    "static/sSafFqQPQTiD5_8pHRcH9/_buildManifest.js",
+    "static/sSafFqQPQTiD5_8pHRcH9/_ssgManifest.js"
   ],
   "rootMainFiles": [
-    "static/chunks/webpack-a6b94870f0546d1c.js",
-    "static/chunks/17-2c8957bfa085de8b.js",
+    "static/chunks/webpack-06ecc7c566f85028.js",
+    "static/chunks/17-b9b7ca0b3df6a016.js",
     "static/chunks/main-app-7a6476113f3f8d1c.js"
   ],
   "pages": {
     "/_app": [
-      "static/chunks/webpack-a6b94870f0546d1c.js",
-      "static/chunks/main-f0d5d67ddc3a41af.js",
-      "static/chunks/pages/_app-d89dff60f8228fa6.js"
+      "static/chunks/webpack-06ecc7c566f85028.js",
+      "static/chunks/main-c7dd60fd07e5eb93.js",
+      "static/chunks/pages/_app-34867fc937083dcf.js"
     ],
     "/_error": [
-      "static/chunks/webpack-a6b94870f0546d1c.js",
-      "static/chunks/main-f0d5d67ddc3a41af.js",
+      "static/chunks/webpack-06ecc7c566f85028.js",
+      "static/chunks/main-c7dd60fd07e5eb93.js",
       "static/chunks/pages/_error-91a854d9c9cfa29b.js"
     ],
     "/sponsor_dashboard": [
-      "static/chunks/webpack-a6b94870f0546d1c.js",
-      "static/chunks/main-f0d5d67ddc3a41af.js",
-      "static/chunks/664-7cbd7d03c73bbebc.js",
-      "static/chunks/pages/sponsor_dashboard-a3ff9c9df61ddf69.js"
+      "static/chunks/webpack-06ecc7c566f85028.js",
+      "static/chunks/main-c7dd60fd07e5eb93.js",
+      "static/chunks/90-436760c589348f4b.js",
+      "static/chunks/pages/sponsor_dashboard-958e8ec22d2c9d79.js"
     ],
     "/sponsor_dashboard_pages/drivers": [
-      "static/chunks/webpack-a6b94870f0546d1c.js",
-      "static/chunks/main-f0d5d67ddc3a41af.js",
-      "static/chunks/664-7cbd7d03c73bbebc.js",
-      "static/chunks/pages/sponsor_dashboard_pages/drivers-f69ef58be2294b4b.js"
+      "static/chunks/webpack-06ecc7c566f85028.js",
+      "static/chunks/main-c7dd60fd07e5eb93.js",
+      "static/chunks/90-436760c589348f4b.js",
+      "static/chunks/pages/sponsor_dashboard_pages/drivers-29ce4bc9a3faeca1.js"
     ]
   },
   "ampFirstPages": []
