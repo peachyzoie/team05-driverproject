@@ -1,6 +1,5 @@
 {
-  "/profile/page": "app/profile/page.js",
   "/page": "app/page.js",
   "/catalog_home/page": "app/catalog_home/page.js",
-  "/about/page": "app/about/page.js"
+  "/profile/page": "app/profile/page.js"
 }

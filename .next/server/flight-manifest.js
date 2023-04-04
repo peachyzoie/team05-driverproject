@@ -188,6 +188,9 @@ self.__RSC_MANIFEST={
     "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/page": [
       "static/css/app/page.css"
     ],
+    "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/catalog_home/page": [
+      "static/css/_app-client_node_modules_tailwindcss_tailwind_css.css"
+    ],
     "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/layout": [
       "static/css/_app-client_app_page_module_css.css"
     ]
@@ -537,6 +540,15 @@ self.__RSC_MANIFEST={
         "app/catalog_home/page:app/catalog_home/page"
       ],
       "async": false
+    }
+  },
+  "/Users/abrahamnaula/WebstormProjects/team05-driverproject/node_modules/tailwindcss/tailwind.css": {
+    "default": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/_app-client_node_modules_tailwindcss_tailwind_css.css"
+      ]
     }
   },
   "/Users/abrahamnaula/WebstormProjects/team05-driverproject/app/page.module.css": {

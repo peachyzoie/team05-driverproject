@@ -16,20 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/head.js"
     ],
-    "/catalog_home/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/catalog_home/page.js"
-    ],
     "/profile/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/profile/page.js"
     ],
-    "/about/page": [
+    "/catalog_home/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/catalog_home/page.js"
     ]
   }
 }
