@@ -1,17 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import 'tailwindcss/tailwind.css'
 
 async function fetchTop5() {
     const data = await fetch(
         `https://itunes.apple.com/us/rss/topsongs/limit=5/explicit=true/json`
     )
     const res = await data.json()
-    console.log(res)
+    //console log for
+    //console.log(res)
     const songs = res.feed.entry; // Access the 'entry' property of the 'feed' object
     return (
         <div>
-            <h1>~ TOP 5 SONGS ON iTUNES ~</h1>
-            <div className={"grid gap-16 grid-cols-fluid"}>
+            <h1 className={"text-3xl font-bold underline"}>~ TOP 5 SONGS ON iTUNES ~</h1>
+            <div  className="grid gap-16 grid-cols-fluid">
                 {songs.map((song: any) => (
                     <div key={song.id.label}> {/* Use a unique key for each element */}
                         <p>{song.title?.label}</p> {/* Use optional chaining to check if the 'title' property exists */}
