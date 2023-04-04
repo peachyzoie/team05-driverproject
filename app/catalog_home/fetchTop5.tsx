@@ -11,7 +11,7 @@ async function fetchTop5() {
     return (
         <div>
             <h1>~ TOP 5 SONGS ON iTUNES ~</h1>
-            <div >
+            <div className={"grid gap-16 grid-cols-fluid"}>
                 {songs.map((song: any) => (
                     <div key={song.id.label}> {/* Use a unique key for each element */}
                         <p>{song.title?.label}</p> {/* Use optional chaining to check if the 'title' property exists */}
