@@ -7,8 +7,8 @@ async function fetchTop5() {
         `https://itunes.apple.com/us/rss/topsongs/limit=5/explicit=true/json`
     )
     const res = await data.json()
-    //console log for
-    //console.log(res)
+    //console log for debugging / viewing the json output
+    console.log(res)
     const songs = res.feed.entry; // Access the 'entry' property of the 'feed' object
     return (
         <div>
@@ -19,6 +19,7 @@ async function fetchTop5() {
                         <p>{song.title?.label}</p> {/* Use optional chaining to check if the 'title' property exists */}
                         {/*<p>{song["im:artist"]?.name?.label}</p> /!* Use optional chaining to check if the 'im:artist' and 'name' properties exist *!/*/}
                         <Image src={song["im:image"][2].label} width={150} height={150} alt={song.title?.label}/>
+                        <p>Price {song["im:price"].attributes.amount}</p>
                     </div>
                 ))}
             </div>
