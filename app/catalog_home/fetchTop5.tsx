@@ -1,0 +1,29 @@
+import React from "react";
+import Image from "next/image";
+
+async function fetchTop5() {
+    const data = await fetch(
+        `https://itunes.apple.com/us/rss/topsongs/limit=5/explicit=true/json`
+    )
+    const res = await data.json()
+    console.log(res)
+    const songs = res.feed.entry; // Access the 'entry' property of the 'feed' object
+    return (
+        <div>
+            <h1>~ TOP 5 SONGS ON iTUNES ~</h1>
+            <div >
+                {songs.map((song: any) => (
+                    <div key={song.id.label}> {/* Use a unique key for each element */}
+                        <p>{song.title?.label}</p> {/* Use optional chaining to check if the 'title' property exists */}
+                        {/*<p>{song["im:artist"]?.name?.label}</p> /!* Use optional chaining to check if the 'im:artist' and 'name' properties exist *!/*/}
+                        <Image src={song["im:image"][2].label} width={150} height={150} alt={song.title?.label}/>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+//https://rss.applemarketingtools.com/ gonna use this as reference to make the sponsor catalog maker.
+//then fetch and display price in poiints
+//then add a button for adding to cart.
+export default fetchTop5;
