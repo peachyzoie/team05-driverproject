@@ -19,7 +19,7 @@ async function fetchTop5() {
                         <p>{song.title?.label}</p> {/* Use optional chaining to check if the 'title' property exists */}
                         {/*<p>{song["im:artist"]?.name?.label}</p> /!* Use optional chaining to check if the 'im:artist' and 'name' properties exist *!/*/}
                         <Image src={song["im:image"][2].label} width={150} height={150} alt={song.title?.label}/>
-                        <p>Price {song["im:price"].attributes.amount}</p>
+                        <p>Points: {Math.ceil(parseFloat(song["im:price"].attributes.amount))}</p>
                     </div>
                 ))}
             </div>
