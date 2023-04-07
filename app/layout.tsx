@@ -1,5 +1,5 @@
 //'use client';
-//import './globals.css'
+import './globals.css'
 import styles from "./page.module.css";
 import Link from "next/link"
 //import { useSelectedLayoutSegment} from "next/navigation";
