@@ -14,8 +14,8 @@ function Home() {
 
         <div>
 
-            <Link href={"/about"}>
-                <h1>Click Here for The About Page</h1>
+            <Link href={"/shopping_cart"}>
+                <h1>Click Here for The Shopping Cart</h1>
             </Link>
 
             <Link href={"/profile"}>
@@ -106,7 +106,7 @@ export default function Home() {
             Docs <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
+            Find in-depth information shopping_cart Next.js features and API.
           </p>
         </a>
 
