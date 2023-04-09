@@ -3,6 +3,7 @@ import './globals.css'
 import styles from "./page.module.css";
 import Link from "next/link"
 import { RxHome, RxExit } from "react-icons/rx"
+import { FiShoppingCart, FiBookOpen } from "react-icons/fi";
 
 // @ts-ignore
 export default function RootLayout ({children}) {
@@ -17,11 +18,10 @@ export default function RootLayout ({children}) {
       <head />
       <body>
       <div className={`${styles.sidebar}`}>
-          <Link href="/"><RxHome /></Link>
-          <Link href = "/about">About</Link>
-          <Link href = "/profile">Profile</Link>
-          <Link href = "/catalog_home">Catalog</Link>
-          <Link href = "/"><RxExit /></Link>
+          <Link href="/"><RxHome />Home</Link>
+          <Link href = "/catalog_home"><FiBookOpen />Catalog</Link>
+          <Link href = "/shopping_cart"><FiShoppingCart/>Shopping Cart</Link>
+          <Link href = "/"><RxExit />Logout</Link>
       </div>
       <div className = {`${styles.content}`}>
           {children}
