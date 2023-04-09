@@ -2,7 +2,7 @@
 import './globals.css'
 import styles from "./page.module.css";
 import Link from "next/link"
-//import { useSelectedLayoutSegment} from "next/navigation";
+import { RxHome, RxExit } from "react-icons/rx"
 
 // @ts-ignore
 export default function RootLayout ({children}) {
@@ -17,10 +17,11 @@ export default function RootLayout ({children}) {
       <head />
       <body>
       <div className={`${styles.sidebar}`}>
-          <Link href="/">Home</Link>
+          <Link href="/"><RxHome /></Link>
           <Link href = "/about">About</Link>
           <Link href = "/profile">Profile</Link>
           <Link href = "/catalog_home">Catalog</Link>
+          <Link href = "/"><RxExit /></Link>
       </div>
       <div className = {`${styles.content}`}>
           {children}
