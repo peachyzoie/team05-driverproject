@@ -1,10 +1,8 @@
 import Link from "next/link";
-import fetchTop5 from "@/app/catalog_home/fetchTop5";
 
-
-async function Catalog() {
+function CatalogHome() {
     return (
-        fetchTop5()
+        <Link href = "/catalog_home/top5Songs">Top 5 Songs</Link>
     )
 }
-export default Catalog
+export default CatalogHome
