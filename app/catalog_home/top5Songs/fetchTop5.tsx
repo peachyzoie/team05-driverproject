@@ -23,7 +23,9 @@ async function fetchTop5() {
                         {/*<p>{song["im:artist"]?.name?.label}</p> /!* Use optional chaining to check if the 'im:artist' and 'name' properties exist *!/*/}
                         <Image src={song["im:image"][2].label} width={150} height={150} alt={song.title?.label}/>
                         <p>Points: {Math.ceil(parseFloat(song["im:price"].attributes.amount))}</p>
-                        <p><Link href = "/shopping_cart"><FiShoppingCart />Add to Cart</Link></p>
+                        <button className="bg-white hover:verdigris text-payne-gray font-semibold hover:text-verdigris py-2 px-4 border border-black-olive hover:border-transparent rounded">
+                            <p><Link href = "/shopping_cart"><FiShoppingCart />Add to Cart</Link></p>
+                        </button>
                     </div>
                 ))}
             </div>
