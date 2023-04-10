@@ -6,13 +6,26 @@ import { RxChatBubble, RxDashboard} from "react-icons/rx";
 function CatalogHome() {
     return (
         <div>
-            <h1 className={"text-3xl font-bold"}>Catalog Directory</h1>
             <div  className="grid gap-16 grid-cols-fluid">
-                <Link href = "/catalog_home/top5Songs"><FiMusic />Top 5 Songs</Link>
-                <Link href = "/catalog_home/top5AudioBooks"><FiHeadphones />Top 5 Audio Books</Link>
-                <Link href = "/catalog_home/top5Books"><FiBook />Top 5 Books</Link>
-                <Link href = "/catalog_home/top5Podcasts"><RxChatBubble />Top 5 Podcasts</Link>
-                <Link href = "/catalog_home/top5Apps"><RxDashboard />Top 5 Apps</Link>
+                <h1 className={"text-3xl font-bold"}>Catalog Directory</h1>
+            </div>
+
+            <div  className="grid gap-16 grid-cols-fluid">
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <Link href = "/catalog_home/top5Songs"><FiMusic />Top 5 Songs</Link>
+                </button>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <Link href = "/catalog_home/top5AudioBooks"><FiHeadphones />Top 5 Audio Books</Link>
+                </button>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <Link href = "/catalog_home/top5Books"><FiBook />Top 5 Books</Link>
+                </button>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <Link href = "/catalog_home/top5Podcasts"><RxChatBubble />Top 5 Podcasts</Link>
+                </button>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <Link href = "/catalog_home/top5Apps"><RxDashboard />Top 5 Apps</Link>
+                </button>
             </div>
         </div>
     )
