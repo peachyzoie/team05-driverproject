@@ -7,22 +7,22 @@ import Link from "next/link"
 
 async function fetchTop5() {
     const data = await fetch(
-        `https://itunes.apple.com/us/rss/toppaidapplications/limit=5/explicit=true/json`
+        `https://itunes.apple.com/us/rss/toptvepisodes/limit=5/explicit=true/json`
     )
     const res = await data.json()
     //console log for debugging / viewing the json output
     console.log(res)
-    const apps = res.feed.entry; // Access the 'entry' property of the 'feed' object
+    const podcasts = res.feed.entry; // Access the 'entry' property of the 'feed' object
     return (
         <div>
             <h1 className={"text-3xl font-bold"}> Top 5 Podcasts on iTunes</h1>
             <div  className="grid gap-16 grid-cols-fluid">
-                {apps.map((app: any) => (
-                    <div key={app.id.label}> {/* Use a unique key for each element */}
-                        <p>{app.title?.label}</p> {/* Use optional chaining to check if the 'title' property exists */}
+                {podcasts.map((podcast: any) => (
+                    <div key={podcast.id.label}> {/* Use a unique key for each element */}
+                        <p>{podcast.title?.label}</p> {/* Use optional chaining to check if the 'title' property exists */}
                         {/*<p>{song["im:artist"]?.name?.label}</p> /!* Use optional chaining to check if the 'im:artist' and 'name' properties exist *!/*/}
-                        <Image src={app["im:image"][2].label} width={150} height={150} alt={app.title?.label}/>
-                        <p>Points: {Math.ceil(parseFloat(app["im:price"].attributes.amount))}</p>
+                        <Image src={podcast["im:image"][2].label} width={150} height={150} alt={podcast.title?.label}/>
+                        <p>Points: {Math.ceil(parseFloat(podcast["im:price"].attributes.amount))}</p>
                         <p><Link href = "/shopping_cart"><FiShoppingCart />Add to Cart</Link></p>
                     </div>
                 ))}
