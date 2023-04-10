@@ -19,11 +19,10 @@ function Home() {
 
 export default Home
 
-
-
+/*
 
 //With logins
-/*
+
 function Home() {
 
 
