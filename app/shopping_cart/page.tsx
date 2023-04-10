@@ -1,8 +1,12 @@
 import Link from "next/link";
+import {FiBookOpen} from "react-icons/fi";
 
 function ShoppingCart() {
     return (
-        <h2>This is the shopping cart</h2>
+        <div>
+            <p style={{fontWeight: "bold"}}> Still Shopping?</p>
+            <Link href = "/catalog_home">Return to the Catalog</Link>
+        </div>
     )
 }
 export default ShoppingCart
