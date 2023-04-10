@@ -12,18 +12,7 @@ function Home() {
         //Link for Login to... directs to some path specified from href, so basically no where for now
 
         <div>
-
-            <Link href={"/shopping_cart"}>
-                <h1>Click Here for The Shopping Cart</h1>
-            </Link>
-
-            <Link href={"/profile"}>
-                    <h1>Click Here to View Your Profile</h1>
-            </Link>
-
-            <Link href={"/catalog_home"}>
-                <h1>Click Here to View the Catalog</h1>
-            </Link>
+            <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import 'tailwindcss/tailwind.css'
-import {FiShoppingCart} from "react-icons/fi";
+import {FiMusic, FiShoppingCart} from "react-icons/fi";
 import Link from "next/link"
 
 
