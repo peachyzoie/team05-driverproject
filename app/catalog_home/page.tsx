@@ -13,6 +13,7 @@ function CatalogHome() {
                 <Link href = "/catalog_home/top5Books"><FiBook />Top 5 Books</Link>
                 <Link href = "/catalog_home/top5Podcasts"><RxChatBubble />Top 5 Podcasts</Link>
                 <Link href = "/catalog_home/top5Apps"><RxDashboard />Top 5 Apps</Link>
+                <Link href = "/catalog_home/top5Movies">Top 5 Movies</Link>
             </div>
         </div>
     )
