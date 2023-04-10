@@ -15,9 +15,9 @@ Amplify.configure(awsExports);
             <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
         </div>
     )
-}*/
+}
 
-//export default Home
+export default Home*/
 
 
 
@@ -28,10 +28,9 @@ function Home() {
 
     return (
         <div>
-
-            <Link href={"../src"}>
-                <h1>Login to the Driver Incentive Program</h1>
-            </Link>
+            <div>
+                <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
+            </div>
         </div>
 
     );
