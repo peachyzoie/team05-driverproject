@@ -2,7 +2,6 @@
 import { Amplify } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-
 import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
@@ -20,11 +19,10 @@ function Home() {
 
 export default Home
 
-
-
+/*
 
 //With logins
-/*
+
 function Home() {
 
 

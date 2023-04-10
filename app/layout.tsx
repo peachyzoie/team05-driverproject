@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 import Link from "next/link"
 import { RxHome, RxExit } from "react-icons/rx"
 import { FiShoppingCart, FiBookOpen } from "react-icons/fi";
-
 // @ts-ignore
 export default function RootLayout ({children}) {
     //children: React.ReactNode
@@ -30,3 +29,4 @@ export default function RootLayout ({children}) {
     </html>
   )
 }
+
