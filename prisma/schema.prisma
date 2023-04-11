@@ -24,7 +24,6 @@ model ProgramUser {
 
 model Driver {
   userId         Int         @id @map("USER_ID")
-  shippingAddress String
   points         Int
   numOrders      Int
   programUser    ProgramUser @relation("DriverUser", fields: [userId], references: [userId])
