@@ -42,7 +42,7 @@ const formFields = {
     },
 }
 
-/*function Home() {
+function Home() {
 
     return (
         //Link for Login to... directs to some path specified from href, so basically no where for now
@@ -53,12 +53,12 @@ const formFields = {
     )
 }
 
-export default Home*/
+export default Home
 
 
 
 //With logins
-
+/*
 function Home() {
 
 
@@ -72,7 +72,7 @@ function Home() {
     );
 }
 export default withAuthenticator(Home, {formFields});
-
+*/
 
 //const inter = Inter({ subsets: ['latin'] })
 /*
