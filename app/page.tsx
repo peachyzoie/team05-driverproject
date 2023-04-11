@@ -9,12 +9,6 @@ Amplify.configure(awsExports);
 
 const formFields = {
     signUp: {
-        username: {
-            labelHidden: false,
-            placeholder: 'Enter your username here',
-            isRequired: true,
-            label: 'Username'
-        },
         driverStatus: {
             labelHidden: false,
             placeHolder: 'Driver, Sponsor, Administrator',
@@ -71,14 +65,13 @@ function Home() {
     return (
         <div>
             <div>
-                <Authenticator formFields={formFields}></Authenticator>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
             </div>
         </div>
 
     );
 }
-export default Home;
+export default withAuthenticator(Home, {formFields});
 
 
 //const inter = Inter({ subsets: ['latin'] })
