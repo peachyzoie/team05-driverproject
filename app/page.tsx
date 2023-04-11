@@ -9,12 +9,6 @@ Amplify.configure(awsExports);
 
 const formFields = {
     signUp: {
-        username: {
-            labelHidden: false,
-            placeholder: 'Enter your username here',
-            isRequired: true,
-            label: 'Username'
-        },
         driverStatus: {
             labelHidden: false,
             placeHolder: 'Driver, Sponsor, Administrator',
