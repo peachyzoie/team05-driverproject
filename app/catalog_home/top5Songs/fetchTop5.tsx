@@ -7,7 +7,7 @@ import Link from "next/link"
 
 async function fetchTop5() {
     const data = await fetch(
-        `https://itunes.apple.com/us/rss/topsongs/limit=5/explicit=true/json`
+        `https://itunes.apple.com/us/rss/topsongs/limit=50/explicit=true/json`
     )
     const res = await data.json()
     //console log for debugging / viewing the json output
@@ -15,7 +15,7 @@ async function fetchTop5() {
     const songs = res.feed.entry; // Access the 'entry' property of the 'feed' object
     return (
         <div>
-            <h1 className={"text-3xl font-bold"}> Top 5 Songs on iTunes</h1>
+            <h1 className={"text-3xl font-bold"}> Top 50 Songs on iTunes</h1>
             <div  className="grid gap-16 grid-cols-fluid">
                 {songs.map((song: any) => (
                     <div key={song.id.label}> {/* Use a unique key for each element */}
@@ -23,7 +23,9 @@ async function fetchTop5() {
                         {/*<p>{song["im:artist"]?.name?.label}</p> /!* Use optional chaining to check if the 'im:artist' and 'name' properties exist *!/*/}
                         <Image src={song["im:image"][2].label} width={150} height={150} alt={song.title?.label}/>
                         <p>Points: {Math.ceil(parseFloat(song["im:price"].attributes.amount))}</p>
-                        <p><Link href = "/shopping_cart"><FiShoppingCart />Add to Cart</Link></p>
+                        <button className="bg-white hover:verdigris text-payne-gray font-semibold hover:text-verdigris py-2 px-4 border border-black-olive hover:border-transparent rounded">
+                            <p><Link href = "/shopping_cart"><FiShoppingCart />Add to Cart</Link></p>
+                        </button>
                     </div>
                 ))}
             </div>

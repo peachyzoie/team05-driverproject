@@ -6,7 +6,7 @@ import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
 Amplify.configure(awsExports);
-function Home() {
+/*function Home() {
 
     return (
         //Link for Login to... directs to some path specified from href, so basically no where for now
@@ -17,7 +17,8 @@ function Home() {
     )
 }
 
-export default Home
+export default Home*/
+
 
 
 //With logins
@@ -27,19 +28,18 @@ export default Home
 
     return (
         <div>
-
-            <Link href={"../src"}>
-                <h1>Login to the Driver Incentive Program</h1>
-            </Link>
+            <div>
+                <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
+            </div>
         </div>
 
     );
 }
 export default withAuthenticator(Home);
-*/
-/*
-const inter = Inter({ subsets: ['latin'] })
 
+
+//const inter = Inter({ subsets: ['latin'] })
+/*
 export default function Home() {
   return (
     <main className={styles.main}>
