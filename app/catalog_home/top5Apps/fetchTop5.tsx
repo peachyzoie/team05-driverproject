@@ -7,7 +7,7 @@ import Link from "next/link"
 
 async function fetchTop5() {
     const data = await fetch(
-        `https://itunes.apple.com/us/rss/toppaidapplications/limit=5/explicit=true/json`
+        `https://itunes.apple.com/us/rss/toppaidapplications/limit=50/explicit=true/json`
     )
     const res = await data.json()
     //console log for debugging / viewing the json output
@@ -15,7 +15,7 @@ async function fetchTop5() {
     const apps = res.feed.entry; // Access the 'entry' property of the 'feed' object
     return (
         <div>
-            <h1 className={"text-3xl font-bold"}> Top 5 Apps on iTunes</h1>
+            <h1 className={"text-3xl font-bold"}> Top 50 Apps on iTunes</h1>
             <div  className="grid gap-16 grid-cols-fluid">
                 {apps.map((app: any) => (
                     <div key={app.id.label}> {/* Use a unique key for each element */}
