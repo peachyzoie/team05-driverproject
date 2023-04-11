@@ -1,11 +1,53 @@
 "use client";
 import { Amplify } from 'aws-amplify';
-import { withAuthenticator } from '@aws-amplify/ui-react';
+import {Authenticator, withAuthenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
 Amplify.configure(awsExports);
+
+const formFields = {
+    signUp: {
+        username: {
+            labelHidden: false,
+            placeholder: 'Enter your username here',
+            isRequired: true,
+            label: 'Username'
+        },
+        driverStatus: {
+            labelHidden: false,
+            placeHolder: 'Driver, Sponsor, Administrator',
+            isRequired: true,
+            label: 'Driver Status'
+        },
+        driverAddress1: {
+            labelHidden: false,
+            placeHolder: 'Address',
+            isRequired: true,
+            label: 'Address Line 1'
+        },
+        driverAddress2: {
+            labelHidden: false,
+            placeHolder: 'Apt #',
+            isRequired: false,
+            label: 'Address Line 2'
+        },
+        driverCity: {
+            labelHidden: false,
+            placeHolder: 'City',
+            isRequired: true,
+            label: 'City'
+        },
+        driverState: {
+          labelHidden: false,
+          placeHolder: 'State',
+            isRequired: true,
+            label: 'State'
+        },
+    },
+}
+
 /*function Home() {
 
     return (
@@ -23,19 +65,20 @@ export default Home*/
 
 //With logins
 
-/*function Home() {
+function Home() {
 
 
     return (
         <div>
             <div>
+                <Authenticator formFields={formFields}></Authenticator>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
             </div>
         </div>
 
     );
 }
-export default withAuthenticator(Home);
+export default Home;
 
 
 //const inter = Inter({ subsets: ['latin'] })
