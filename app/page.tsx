@@ -71,14 +71,13 @@ function Home() {
     return (
         <div>
             <div>
-                <Authenticator formFields={formFields}></Authenticator>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
             </div>
         </div>
 
     );
 }
-export default Home;
+export default withAuthenticator(Home, {formFields});
 
 
 //const inter = Inter({ subsets: ['latin'] })
