@@ -9,11 +9,23 @@ Amplify.configure(awsExports);
 
 const formFields = {
     signUp: {
+        driverFirstName:{
+            labelHidden: false,
+            placeHolder: 'First Name',
+            isRequired: true,
+            label: 'First Name'
+        },
+        driverLastName: {
+            labelHidden: false,
+            placeHolder: 'Last Name',
+            isRequired: true,
+            label: 'Last Name'
+        },
         driverStatus: {
             labelHidden: false,
             placeHolder: 'Driver, Sponsor, Administrator',
             isRequired: true,
-            label: 'Driver Status'
+            label: 'Account Type'
         },
         driverAddress1: {
             labelHidden: false,
@@ -34,31 +46,16 @@ const formFields = {
             label: 'City'
         },
         driverState: {
-          labelHidden: false,
-          placeHolder: 'State',
+            labelHidden: false,
+            placeHolder: 'State',
             isRequired: true,
             label: 'State'
         },
     },
 }
 
-function Home() {
-
-    return (
-        //Link for Login to... directs to some path specified from href, so basically no where for now
-
-        <div>
-            <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
-        </div>
-    )
-}
-
-export default Home
-
-
 
 //With logins
-/*
 function Home() {
 
 
@@ -72,7 +69,7 @@ function Home() {
     );
 }
 export default withAuthenticator(Home, {formFields});
-*/
+
 
 //const inter = Inter({ subsets: ['latin'] })
 /*
@@ -102,7 +99,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-
       <div className={styles.center}>
         <Image
           className={styles.logo}
@@ -116,7 +112,6 @@ export default function Home() {
           <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
         </div>
       </div>
-
       <div className={styles.grid}>
         <a
           href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -131,7 +126,6 @@ export default function Home() {
             Find in-depth information shopping_cart Next.js features and API.
           </p>
         </a>
-
         <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
@@ -143,7 +137,6 @@ export default function Home() {
           </h2>
           <p className={inter.className}>Explore the Next.js 13 playground.</p>
         </a>
-
         <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
