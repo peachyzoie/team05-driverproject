@@ -10,6 +10,12 @@
       "StackName": "amplify-team5amplify-main-154819",
       "StackId": "arn:aws:cloudformation:us-east-1:274815321855:stack/amplify-team5amplify-main-154819/a4b2a680-c27f-11ed-a4dd-0ab9a0d17e1b",
       "AmplifyAppId": "d1gnpsuwpsurl4"
+    },
+    "categories": {
+      "auth": {
+        "team5amplifye3f908d6": {},
+        "userPoolGroups": {}
+      }
     }
   },
   "dev": {
