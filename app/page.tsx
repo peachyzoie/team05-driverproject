@@ -54,20 +54,8 @@ const formFields = {
     },
 }
 
-/*function Home() {
-    return (
-        //Link for Login to... directs to some path specified from href, so basically no where for now
-        <div>
-            <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
-        </div>
-    )
-}
-export default Home*/
-
-
 
 //With logins
-
 function Home() {
 
 
