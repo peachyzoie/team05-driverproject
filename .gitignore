@@ -1,6 +1,7 @@
 .DS_Store
 .next
 node_modules
+.env
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
 amplify/.config/local-*

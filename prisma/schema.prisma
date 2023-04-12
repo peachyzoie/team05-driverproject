@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model ProgramUser {
+  userId        Int           @id
+  lastName      String
+  firstName     String
+  email         String
+  userType      UserType
+  driver        Driver?       @relation("DriverUser", fields: [userId], references: [userId])
+  sponsor       Sponsor?      @relation("SponsorUser", fields: [userId], references: [userId])
+  administrator Administrator? @relation("AdminUser", fields: [userId], references: [userId])
+  pointTable    PointTable[]
+  driverOrder   DriverOrder[]
+
+  @@index([email], unique: true)
+}
+
+model Driver {
+  userId         Int         @id @map("USER_ID")
+  points         Int
+  numOrders      Int
+  programUser    ProgramUser @relation("DriverUser", fields: [userId], references: [userId])
+}
+
+model Sponsor {
+  userId      Int         @id @map("USER_ID")
+  programUser ProgramUser @relation("SponsorUser", fields: [userId], references: [userId])
+  catalog     Catalog[]
+}
+
+model Administrator {
+  userId      Int         @id @map("USER_ID")
+  programUser ProgramUser @relation("AdminUser", fields: [userId], references: [userId])
+}
+
+model PointTable {
+  userId      Int         @id
+  dateTimeStamp DateTime  @id
+  pointNum    Int
+  reason      String
+  programUser ProgramUser @relation(fields: [userId], references: [userId])
+}
+
+model DriverOrder {
+  orderId         Int         @id @map("ORDER_ID")
+  userId          Int
+  itemNum         Int
+  price           Float
+  inProcess       Boolean
+  isDelivered     Boolean
+  dateTimePlaced  DateTime
+  programUser     ProgramUser @relation(fields: [userId], references: [userId])
+}
+
+model Catalog {
+  catalogId Int      @id @map("CATALOG_ID")
+  sponsorId Int
+  sponsor   Sponsor  @relation(fields: [sponsorId], references: [userId])
+  product   Product[]
+}
+
+model Product {
+  catalogId Int     @id
+  productId Int     @id
+  catalog   Catalog @relation(fields: [catalogId], references: [catalogId])
+}
+
+enum UserType {
+  driver
+  sponsor
+  administrator
+}
