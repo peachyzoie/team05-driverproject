@@ -5,6 +5,7 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
+import {ACTION_AUTH_SIGNOUT} from "@aws-amplify/ui-react/dist/types/hooks/actions/constants";
 Amplify.configure(awsExports);
 // @ts-ignore
 
@@ -73,7 +74,7 @@ export default Home*/
 //With logins
 
 // @ts-ignore
-function Home() {
+function Home({formFields, signOut}) {
 
 
     return (
@@ -85,7 +86,7 @@ function Home() {
 
     );
 }
-export default withAuthenticator(Home, {formFields});
+export default withAuthenticator(Home);
 
 //const inter = Inter({ subsets: ['latin'] })
 /*

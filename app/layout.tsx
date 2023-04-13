@@ -22,7 +22,7 @@ export default function RootLayout ({children}) {
           <Link href="/"><RxHome />Home</Link>
           <Link href = "/catalog_home"><FiBookOpen />Catalog</Link>
           <Link href = "/shopping_cart"><FiShoppingCart/>Shopping Cart</Link>
-          <Link href = "/logOut"><RxExit />Logout</Link>
+          <Link href = "/"><RxExit />Logout</Link>
       </div>
       <div className = {`${styles.content}`}>
           {children}
