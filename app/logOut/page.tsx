@@ -1,9 +1,10 @@
 import Link from "next/link";
-import {Auth} from 'aws-amplify';
+import {Auth} from "aws-amplify";
 
-function logOut() {
+async function logOut() {
     return (
         Auth.signOut()
     )
 }
+
 export default logOut
