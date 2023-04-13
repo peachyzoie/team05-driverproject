@@ -6,6 +6,7 @@ import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
 Amplify.configure(awsExports);
+// @ts-ignore
 
 const formFields = {
     signUp: {
@@ -71,6 +72,7 @@ export default Home*/
 
 //With logins
 
+// @ts-ignore
 function Home({signOut}) {
 
 
