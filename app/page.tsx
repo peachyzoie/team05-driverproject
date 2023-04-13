@@ -73,13 +73,12 @@ export default Home*/
 //With logins
 
 // @ts-ignore
-function Home({signOut}) {
+function Home() {
 
 
     return (
         <div>
             <div>
-                <button onClick = {signOut}>Sign out</button>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
             </div>
         </div>
