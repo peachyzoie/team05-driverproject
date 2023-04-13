@@ -1,5 +1,5 @@
 "use client";
-import { Amplify } from 'aws-amplify';
+import { Amplify, Auth } from 'aws-amplify';
 import {Authenticator, withAuthenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
@@ -86,7 +86,6 @@ function Home() {
     );
 }
 export default withAuthenticator(Home, {formFields});
-
 
 //const inter = Inter({ subsets: ['latin'] })
 /*
