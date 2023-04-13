@@ -71,12 +71,13 @@ export default Home*/
 
 //With logins
 
-function Home() {
+function Home({signOut}) {
 
 
     return (
         <div>
             <div>
+                <button onClick = {signOut}>Sign out</button>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
             </div>
         </div>
