@@ -3,10 +3,10 @@
 
 const awsmobile = {
     "aws_project_region": "us-east-1",
-    "aws_cognito_identity_pool_id": "us-east-1:163bc92a-5be4-48f8-8af6-7004516365b6",
+    "aws_cognito_identity_pool_id": "us-east-1:d085df9d-ce3e-4c3f-9670-585120dc1b84",
     "aws_cognito_region": "us-east-1",
-    "aws_user_pools_id": "us-east-1_fujiMfL0b",
-    "aws_user_pools_web_client_id": "72rg967bds9iu1cb0jqtc2bid6",
+    "aws_user_pools_id": "us-east-1_cSYOiMcRi",
+    "aws_user_pools_web_client_id": "4c40uhod721l4ggov656a7idtd",
     "oauth": {},
     "aws_cognito_username_attributes": [],
     "aws_cognito_social_providers": [],
@@ -23,6 +23,15 @@ const awsmobile = {
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
+    ],
+    "aws_user_files_s3_bucket": "team5amplify-storage183637-staging",
+    "aws_user_files_s3_bucket_region": "us-east-1",
+    "aws_cloud_logic_custom": [
+        {
+            "name": "team5API",
+            "endpoint": "https://notcuyq0oj.execute-api.us-east-1.amazonaws.com/staging",
+            "region": "us-east-1"
+        }
     ]
 };
 

@@ -1,4 +1,20 @@
 {
+  "api": {
+    "team5API": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "team5LamUser"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "team5amplifye3f908d6": {
       "customAuth": false,
@@ -39,6 +55,38 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "Cognito-UserPool-Groups"
+    }
+  },
+  "function": {
+    "team5LamUser": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_team5LamUser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "team5LamUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_team5LamUser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "team5LamUser"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "s3team5amplifystorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
     }
   }
 }
