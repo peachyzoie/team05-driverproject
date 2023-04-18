@@ -87,7 +87,7 @@ function Home({formFields}) {
 
     );
 }
-export default withAuthenticator(Home);
+export default withAuthenticator(Home, {formFields});
 
 //const inter = Inter({ subsets: ['latin'] })
 /*
