@@ -74,13 +74,15 @@ export default Home*/
 //With logins
 
 // @ts-ignore
-function Home({formFields}) {
+// @ts-ignore
+function Home({formFields, signOut}) {
 
 
     return (
         <div>
             <div>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
+                <button onClick={signOut}>Sign Out</button>
             </div>
         </div>
 
