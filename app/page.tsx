@@ -57,7 +57,7 @@ const formFields = {
 
 
 // @ts-ignore
-function Home({formFields}) {
+function Home() {
 
 
     return (
