@@ -75,7 +75,7 @@ export default Home*/
 
 // @ts-ignore
 // @ts-ignore
-function Home({formFields}) {
+function Home() {
 
 
     return (
