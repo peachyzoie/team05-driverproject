@@ -1,5 +1,5 @@
 "use client";
-import { Amplify, Auth } from 'aws-amplify';
+import {Amplify, Auth} from 'aws-amplify';
 import {withAuthenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
@@ -64,6 +64,7 @@ function Home() {
         <div>
             <div>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
+                <button onClick={() => Auth.signOut()}>Logout</button>
             </div>
         </div>
 
