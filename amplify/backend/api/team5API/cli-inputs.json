@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/user/{userId}": {
+      "name": "/user/{userId}",
+      "lambdaFunction": "team5LamUser",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

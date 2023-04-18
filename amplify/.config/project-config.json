@@ -2,7 +2,7 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "team05driverproject",
+  "projectName": "team5amplify",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
@@ -10,8 +10,8 @@
     "config": {
       "SourceDir": "src",
       "DistributionDir": "build",
-      "BuildCommand": "npm run build",
-      "StartCommand": "npm run start"
+      "BuildCommand": "npm build",
+      "StartCommand": "npm start"
     }
   }
 }

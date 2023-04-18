@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3team5amplifystorage",
+  "bucketName": "team5amplify-storage",
+  "policyUUID": "fa6ff7e4",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
