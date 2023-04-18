@@ -74,7 +74,7 @@ export default Home*/
 //With logins
 
 // @ts-ignore
-function Home({formFields, signOut}) {
+function Home({formFields}) {
 
 
     return (

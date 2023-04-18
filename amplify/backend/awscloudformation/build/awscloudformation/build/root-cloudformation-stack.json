@@ -155,7 +155,7 @@
     "authteam5amplifye3f908d6": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-team5amplify-dev-141419-deployment/amplify-cfn-templates/auth/team5amplifye3f908d6-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-team5amplify-main-154819-deployment/amplify-cfn-templates/auth/team5amplifye3f908d6-cloudformation-template.json",
         "Parameters": {
           "identityPoolName": "team5amplifye3f908d6_identitypool_e3f908d6",
           "allowUnauthenticatedIdentities": false,
@@ -201,14 +201,14 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
-          "env": "dev"
+          "env": "main"
         }
       }
     },
     "authuserPoolGroups": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-team5amplify-dev-141419-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-team5amplify-main-154819-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
         "Parameters": {
           "AuthRoleArn": {
             "Fn::GetAtt": [
@@ -246,7 +246,7 @@
               "Outputs.IdentityPoolId"
             ]
           },
-          "env": "dev"
+          "env": "main"
         }
       }
     },
@@ -325,7 +325,7 @@
           }
         },
         "Handler": "index.handler",
-        "Runtime": "nodejs14.x",
+        "Runtime": "nodejs16.x",
         "Timeout": 300,
         "Role": {
           "Fn::GetAtt": [

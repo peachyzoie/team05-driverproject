@@ -2,7 +2,7 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "team5amplify",
+  "projectName": "team05driverproject",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
