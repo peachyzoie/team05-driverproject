@@ -13,13 +13,13 @@ model ProgramUser {
   firstName     String
   email         String
   userType      UserType
-  driver        Driver?       @relation("DriverUser", fields: [userId], references: [userId])
-  sponsor       Sponsor?      @relation("SponsorUser", fields: [userId], references: [userId])
-  administrator Administrator? @relation("AdminUser", fields: [userId], references: [userId])
+  driver        Driver?       @relation("DriverUser")
+  sponsor       Sponsor?      @relation("SponsorUser")
+  administrator Administrator? @relation("AdminUser")
   pointTable    PointTable[]
   driverOrder   DriverOrder[]
 
-  @@index([email], unique: true)
+  @@unique([email])
 }
 
 model Driver {
@@ -41,11 +41,13 @@ model Administrator {
 }
 
 model PointTable {
-  userId      Int         @id
-  dateTimeStamp DateTime  @id
+  userId      Int
+  dateTimeStamp DateTime
   pointNum    Int
   reason      String
   programUser ProgramUser @relation(fields: [userId], references: [userId])
+
+  @@id([userId, dateTimeStamp])
 }
 
 model DriverOrder {
@@ -67,9 +69,11 @@ model Catalog {
 }
 
 model Product {
-  catalogId Int     @id
-  productId Int     @id
+  catalogId Int
+  productId Int
   catalog   Catalog @relation(fields: [catalogId], references: [catalogId])
+
+  @@id([catalogId, productId])
 }
 
 enum UserType {
