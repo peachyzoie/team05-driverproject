@@ -5,6 +5,7 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
 import React from 'react';
 import Link from "next/link";
+import {RxExit} from "react-icons/rx";
 Amplify.configure(awsExports);
 // @ts-ignore
 
@@ -64,10 +65,10 @@ function Home() {
         <div>
             <div>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
-                <button onClick={() => Auth.signOut()}>Logout</button>
+                <button onClick={() => Auth.signOut()}><RxExit/>Logout</button>
             </div>
         </div>
 
-    );
-}
+    )
+};
 export default withAuthenticator(Home, {formFields});

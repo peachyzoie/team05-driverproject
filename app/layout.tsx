@@ -5,6 +5,8 @@ import Link from "next/link"
 import { RxHome, RxExit } from "react-icons/rx"
 import { FiShoppingCart, FiBookOpen, FiUsers } from "react-icons/fi";
 import {Authenticator} from "@aws-amplify/ui-react";
+import {Amplify, Auth} from "aws-amplify";
+import React from "react";
 // @ts-ignore
 
 export default function RootLayout ({children}) {
@@ -23,7 +25,6 @@ export default function RootLayout ({children}) {
           <Link href = "/catalog_home"><FiBookOpen />Catalog</Link>
           <Link href = "/shopping_cart"><FiShoppingCart/>Shopping Cart</Link>
           <Link href  = "/profile"><FiUsers/>Profile</Link>
-          <Link href = "/"><RxExit />Logout</Link>
       </div>
       <div className = {`${styles.content}`}>
           {children}
