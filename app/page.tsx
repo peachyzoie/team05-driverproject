@@ -74,6 +74,7 @@ export default Home*/
 //With logins
 
 // @ts-ignore
+// @ts-ignore
 function Home({formFields, signOut}) {
 
 
@@ -81,6 +82,7 @@ function Home({formFields, signOut}) {
         <div>
             <div>
                 <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
+                <button onClick={signOut}>Sign Out</button>
             </div>
         </div>
 
