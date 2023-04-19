@@ -63,10 +63,10 @@ function Home() {
 
     return (
         <div>
-            <div>
-                <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
-                <button onClick={() => Auth.signOut()}><RxExit/>Logout</button>
-            </div>
+            <h1 className={"text-3xl font-bold"}> Welcome Home</h1>
+            <button className="bg-white hover:verdigris text-payne-gray font-semibold hover:text-verdigris py-2 px-4 border border-black-olive hover:border-transparent rounded" onClick={() =>
+                Auth.signOut()}><RxExit/>Logout
+            </button>
         </div>
 
     )
