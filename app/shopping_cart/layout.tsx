@@ -7,6 +7,7 @@ export default function ShoppingCartLayout({
     return (
         <>
             <nav className={"text-3xl font-bold"}>Your Shopping Cart</nav>
+            <hr></hr>
             <main>
                 {children}
             </main>

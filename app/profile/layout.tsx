@@ -12,6 +12,7 @@ export default function ProfileLayout({
     return (
         <>
             <nav className={"text-3xl font-bold"}>Your Profile</nav>
+            <hr></hr>
             <main>
                 {children}
             </main>

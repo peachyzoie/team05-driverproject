@@ -15,7 +15,6 @@ async function fetchTop5() {
     const books = res.feed.entry; // Access the 'entry' property of the 'feed' object
     return (
         <div>
-            <h1 className={"text-3xl font-bold"}> Top 50 Audio Books on iTunes</h1>
             <div  className="grid gap-16 grid-cols-fluid">
                 {books.map((song: any) => (
                     <div key={song.id.label}> {/* Use a unique key for each element */}

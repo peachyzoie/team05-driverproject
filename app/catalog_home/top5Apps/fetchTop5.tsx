@@ -15,7 +15,6 @@ async function fetchTop5() {
     const apps = res.feed.entry; // Access the 'entry' property of the 'feed' object
     return (
         <div>
-            <h1 className={"text-3xl font-bold"}> Top 50 Apps on iTunes</h1>
             <div  className="grid gap-16 grid-cols-fluid">
                 {apps.map((app: any) => (
                     <div key={app.id.label}> {/* Use a unique key for each element */}

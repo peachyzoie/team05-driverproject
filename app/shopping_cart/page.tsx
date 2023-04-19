@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {FiBookOpen} from "react-icons/fi";
+import React from "react";
 
 function ShoppingCart() {
     return (

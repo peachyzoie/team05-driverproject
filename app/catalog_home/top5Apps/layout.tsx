@@ -8,7 +8,7 @@ export default function top5AppsLayout({
         /* This css changes only the top5Apps dir, and can be changed to make each fetch call unique to the given media. */ 
         return (
         <>
-            <nav>Please enjoy browsing the top 50 Apps from the iTunes store!</nav>
+            <nav className={"text-1xl font-bold"}>Top 50 Apps</nav>
             <main className={styles.main}>
                 {children}
             </main>

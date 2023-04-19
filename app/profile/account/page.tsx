@@ -6,6 +6,7 @@ import React from "react";
 function Profile() {
     return (
         <div>
+            <hr></hr>
             <p><text className={"text-1xl font-bold"}>Edit Account Information</text></p>
             <form action="/send-data-here" method="post">
                 <p><label className="underline" htmlFor="pfp">Profile Picture:</label></p>
