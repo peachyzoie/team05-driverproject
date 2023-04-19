@@ -4,6 +4,9 @@ import {FiBook, FiMonitor, FiMusic, FiFilm} from "react-icons/fi"
 import { RxChatBubble, RxDashboard} from "react-icons/rx";
 
 function CatalogHome() {
+    // The below demonstrates error boundaries 
+    // throw new Error("This is an error"); 
+    
     return (
         <div>
             <h1 className={"text-1xl text-white font-bold" }>Catalog Directory</h1>
