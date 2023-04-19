@@ -6,7 +6,7 @@ import { RxChatBubble, RxDashboard} from "react-icons/rx";
 function CatalogHome() {
     return (
         <div>
-            <h1 className={"text-3xl text-white font-bold"}>Catalog Directory</h1>
+            <h1 className={"text-1xl text-white font-bold"}>Catalog Directory</h1>
             <div  className="grid gap-16 grid-cols-fluid">
                 <button className="bg-white hover:verdigris text-payne-gray font-semibold hover:text-verdigris py-2 px-4 border border-black-olive hover:border-transparent rounded">
                     <Link href = "/catalog_home/top5Songs"><FiMusic />Top 50 Songs</Link>
