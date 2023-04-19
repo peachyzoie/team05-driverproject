@@ -8,7 +8,7 @@ function Profile() {
         <div>
             <hr></hr>
             <p><text className={"text-1xl font-bold"}>Edit Account Information</text></p>
-            <form action="/send-data-here" method="post">
+            <form action="/profile/account/changes_success" method="post">
                 <p><label className="underline" htmlFor="pfp">Profile Picture:</label></p>
                 <input type="file" id="pfp" name="pfp" accept="image/png, image/jpeg"/>
                 <p><label className="underline" htmlFor="first">First Name:</label></p>

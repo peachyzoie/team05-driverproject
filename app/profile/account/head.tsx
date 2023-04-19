@@ -7,7 +7,7 @@
 export default function Head() {
     return (
         <>
-            <title>Account Home</title>
+            <title>Edit Account</title>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
             <meta name="description" content="Created by The Brogrammers" />
             <link rel="icon" href="/truck-icon-31.ico" />
