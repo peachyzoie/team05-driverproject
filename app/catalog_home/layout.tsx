@@ -4,7 +4,7 @@ export default function CatalogLayout( {
     }) {
         return (
             <>
-                <nav className={"text-3xl font-bold"}>iTunes Catalog!</nav>
+                <nav className={"text-3xl font-bold"}>iTunes Catalog</nav>
                 <main>
                     {children} 
                 </main>
