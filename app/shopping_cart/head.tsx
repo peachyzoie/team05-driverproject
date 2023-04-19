@@ -7,10 +7,10 @@
 export default function Head() {
     return (
         <>
-            <title>Shopping Cart Home</title>
+            <title>Shopping Cart</title>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
             <meta name="description" content="Created by The Brogrammers" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/truck-icon-31.ico" />
         </>
     )
 }
