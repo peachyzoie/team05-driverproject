@@ -22,7 +22,7 @@
       "function": {
         "team5LamUser": {
           "deploymentBucketName": "amplify-amplify598498abe8fb4-staging-183637-deployment",
-          "s3Key": "amplify-builds/team5LamUser-4352307a644943697434-build.zip"
+          "s3Key": "amplify-builds/team5LamUser-3570636a78347673612b-build.zip"
         }
       },
       "api": {
